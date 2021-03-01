@@ -1,0 +1,10 @@
+{% extends 'account_base.html' %}
+{% block title %}Вход на сайт{% endblock %}
+{% block body %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit"> Войти</button>
+    </form>
+{% endblock %}
+
